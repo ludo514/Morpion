@@ -12,8 +12,8 @@ class Game
 		coup_joueur1 = 1
 		coup_joueur2 = 0
 		coup_totaux = 0
+		@board.show_board_empty
 		while !@board.verif_joueur1 and !@board.verif_joueur2 and coup_totaux < 9
-			#@board.gets_bord
 			if coup_joueur1 == 1
 				puts "Le joueur 1 #{@joueur1.name_joueur} joue : Entrez une case A1,A2,A3 B1,B2,B3 C1,C2,C3"
 				puts ">"
@@ -22,8 +22,7 @@ class Game
 				coup_joueur1 -=1
 				coup_joueur2 += 1
 				coup_totaux += 1
-			end
-			if coup_joueur2 == 1
+			elsif coup_joueur2 == 1
 				puts "Le joueur 2 #{@joueur2.name_joueur} joue : Entrez une case A1,A2,A3 B1,B2,B3 C1,C2,C3"
 				puts ">"
 				choix = gets.chomp
@@ -42,9 +41,5 @@ class Game
 		if coup_totaux == 9
 			puts "Egalité !!!!!!!"
 		end
-	end
-
-	def affiche
-		@board.gets_board
 	end
 end

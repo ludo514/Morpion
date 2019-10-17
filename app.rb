@@ -12,7 +12,7 @@ def main
 	puts "Le joueur1 à les X et joueur2 à les O"
 	game = Game.new(joueur1, joueur2)
 	#game.affiche
-	puts "---------------------------"
+	puts "-------------------------------------"
 	game.menu
 
 end

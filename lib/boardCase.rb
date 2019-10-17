@@ -6,7 +6,7 @@ class BoardCase
 		@symbole = symbole
 	end
 	def get_case
-		print "[  #{@symbole}  ]"
+		print  " [  #{@symbole}  ] "
 	end
 	def get_name
 		return @nom_case
