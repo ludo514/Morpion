@@ -3,8 +3,8 @@ require_relative 'board'
 require 'colorize'
 class Game
 	def initialize(name_joueur1, name_joueur2)
-		@joueur1 = Player.new(name_joueur1, "X")
-		@joueur2 = Player.new(name_joueur2, "O")
+		@joueur1 = Player.new(name_joueur1, "X".green)
+		@joueur2 = Player.new(name_joueur2, "O".red)
 		@board = Board.new
 	end
 

@@ -1,4 +1,4 @@
-require 'colorize'
+
 class BoardCase
 	attr_accessor :nom_case, :symbole
 	def initialize(nom_case, symbole)

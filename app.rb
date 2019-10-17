@@ -1,5 +1,6 @@
 #$:.unshift File.expand_path("./../lib", __FILE__)
 require_relative 'lib/game'
+require 'colorize'
 def main
 
 	puts "Entrez nom joueur 1"

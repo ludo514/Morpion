@@ -7,27 +7,27 @@ class Board
 				[BoardCase.new("C1"," "), BoardCase.new("C2", " "), BoardCase.new("C3"," ")]]
 	end
 	def verif_joueur1
-		if (@bord[0][0].get_symbol == "X" and @bord[0][1].get_symbol == "X" and @bord[0][2].get_symbol == "X") or
-			(@bord[1][0].get_symbol == "X" and @bord[1][1].get_symbol == "X" and @bord[1][2].get_symbol == "X") or
-			(@bord[2][0].get_symbol == "X" and @bord[2][1].get_symbol == "X" and @bord[2][2].get_symbol == "X") or
-			(@bord[0][0].get_symbol == "X" and @bord[1][1].get_symbol == "X" and @bord[2][2].get_symbol == "X") or
-			(@bord[0][2].get_symbol == "X" and @bord[1][1].get_symbol == "X" and @bord[2][0].get_symbol == "X") or
-			(@bord[0][0].get_symbol == "X" and @bord[1][0].get_symbol == "X" and @bord[2][0].get_symbol == "X") or
-			(@bord[0][1].get_symbol == "X" and @bord[1][1].get_symbol == "X" and @bord[2][1].get_symbol == "X") or
-			(@bord[0][2].get_symbol == "X" and @bord[1][2].get_symbol == "X" and @bord[2][2].get_symbol == "X")
+		if (@bord[0][0].get_symbol == "X".green and @bord[0][1].get_symbol == "X".green and @bord[0][2].get_symbol == "X".green) or
+			(@bord[1][0].get_symbol == "X".green and @bord[1][1].get_symbol == "X".green and @bord[1][2].get_symbol == "X".green) or
+			(@bord[2][0].get_symbol == "X".green and @bord[2][1].get_symbol == "X".green and @bord[2][2].get_symbol == "X".green) or
+			(@bord[0][0].get_symbol == "X".green and @bord[1][1].get_symbol == "X".green and @bord[2][2].get_symbol == "X".green) or
+			(@bord[0][2].get_symbol == "X".green and @bord[1][1].get_symbol == "X".green and @bord[2][0].get_symbol == "X".green) or
+			(@bord[0][0].get_symbol == "X".green and @bord[1][0].get_symbol == "X".green and @bord[2][0].get_symbol == "X".green) or
+			(@bord[0][1].get_symbol == "X".green and @bord[1][1].get_symbol == "X".green and @bord[2][1].get_symbol == "X".green) or
+			(@bord[0][2].get_symbol == "X".green and @bord[1][2].get_symbol == "X".green and @bord[2][2].get_symbol == "X".green)
 
 			return true
 		end
 	end
 	def verif_joueur2
-		if (@bord[0][0].get_symbol == "O" and @bord[0][1].get_symbol == "O" and @bord[0][2].get_symbol == "O") or
-			(@bord[1][0].get_symbol == "O" and @bord[1][1].get_symbol == "O" and @bord[1][2].get_symbol == "O") or
-			(@bord[2][0].get_symbol == "O" and @bord[2][1].get_symbol == "O" and @bord[2][2].get_symbol == "O") or
-			(@bord[0][0].get_symbol == "O" and @bord[1][1].get_symbol == "O" and @bord[2][2].get_symbol == "O") or
-			(@bord[0][2].get_symbol == "O" and @bord[1][1].get_symbol == "O" and @bord[2][0].get_symbol == "O") or
-			(@bord[0][0].get_symbol == "O" and @bord[1][0].get_symbol == "O" and @bord[2][0].get_symbol == "O") or
-			(@bord[0][1].get_symbol == "O" and @bord[1][1].get_symbol == "O" and @bord[2][1].get_symbol == "O") or
-			(@bord[0][2].get_symbol == "O" and @bord[1][2].get_symbol == "O" and @bord[2][2].get_symbol == "O")
+		if (@bord[0][0].get_symbol == "O".red and @bord[0][1].get_symbol == "O".red and @bord[0][2].get_symbol == "O".red) or
+			(@bord[1][0].get_symbol == "O".red and @bord[1][1].get_symbol == "O".red and @bord[1][2].get_symbol == "O".red) or
+			(@bord[2][0].get_symbol == "O".red and @bord[2][1].get_symbol == "O".red and @bord[2][2].get_symbol == "O".red) or
+			(@bord[0][0].get_symbol == "O".red and @bord[1][1].get_symbol == "O".red and @bord[2][2].get_symbol == "O".red) or
+			(@bord[0][2].get_symbol == "O".red and @bord[1][1].get_symbol == "O".red and @bord[2][0].get_symbol == "O".red) or
+			(@bord[0][0].get_symbol == "O".red and @bord[1][0].get_symbol == "O".red and @bord[2][0].get_symbol == "O".red) or
+			(@bord[0][1].get_symbol == "O".red and @bord[1][1].get_symbol == "O".red and @bord[2][1].get_symbol == "O".red) or
+			(@bord[0][2].get_symbol == "O".red and @bord[1][2].get_symbol == "O".red and @bord[2][2].get_symbol == "O".red)
 
 			return true
 		end
